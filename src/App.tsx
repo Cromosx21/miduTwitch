@@ -1,7 +1,14 @@
+import Navbar from "./components/Navbar";
+import Sidebar from "./components/Sidebar";
+
 function App() {
 	return (
 		<>
-			<h1 className="text-3xl bg-amber-200 uppercase font-semibold">Recommended Channels</h1>
+			<Navbar />
+			<main className="px-6 mt-6">
+				<Sidebar />
+				
+			</main>
 		</>
 	);
 }
