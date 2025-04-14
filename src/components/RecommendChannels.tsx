@@ -1,5 +1,5 @@
 import { CollapseIcon } from "./ui/Icons";
-import CardChannels from "./ui/CardChannels";
+import SuggestedAccount from "./ui/SuggestedAccount";
 
 export default function RecommendChannels() {
 
@@ -19,17 +19,17 @@ export default function RecommendChannels() {
 						<CollapseIcon Styles={"size-7 text-gray-100 h-full"} />
 					</div>
 					<div className="w-full">
-                        <CardChannels 
+                        <SuggestedAccount 
                             NameChannel="MiduDev"
                             TitleVideo="Aprende a programar"
                             TotalViwers={CalcViwers(2780)}
                         />
-                        <CardChannels 
+                        <SuggestedAccount 
                             NameChannel="MiduDev"
                             TitleVideo="Aprende a programar"
                             TotalViwers={CalcViwers(2948)}
                         />
-                        <CardChannels 
+                        <SuggestedAccount 
                             NameChannel="MiduDev"
                             TitleVideo="Aprende a programar"
                             TotalViwers={CalcViwers(1347)}
