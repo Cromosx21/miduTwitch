@@ -16,11 +16,11 @@ export default function CardChannel({
 	return (
 		<>
 			<figure className="max-w-sm flex flex-col gap-2.5 min-w-xs">
-				<div className="relative before:content-[''] before:absolute before:left-0 before:top-0 before:w-full before:h-[206px] before:bg-sky-500 transition-all duration-300 ease-in-out group before:-z-10 ">
+				<div className=" group">
 					<img
 						src={`../../src/assets/thumbnails_Channels/${NameThumbnail}`}
 						alt="Imagen del canal"
-						className="aspect-ratio-[384/210] block cursor-pointer group-hover:-translate-y-2 group-hover:translate-x-2 transition-all duration-300 ease-in-out"
+						className="aspect-ratio-[384/210] block cursor-pointer group-hover:-translate-y-1.5 group-hover:translate-x-1.5 transition-all duration-300 ease-in-out group-hover:shadow-card rounded-xs"
 					/>
 				</div>
 				<figcaption>

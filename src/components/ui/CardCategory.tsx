@@ -12,11 +12,11 @@ export default function CardCategory({
 	return (
 		<>
 			<figure className="flex flex-col gap-2.5 max-w-[182px] min-w-44">
-				<div className="relative before:content-[''] before:absolute before:left-0 before:top-0 before:w-full before:h-[240px] before:bg-sky-500 transition-all duration-300 ease-in-out group before:-z-10 before:scale-[.991]">
+				<div className=" group">
 					<img
 						src={`../../src/assets/portada_categories/${NameImage}`}
 						alt="Imagen de portada de categoría"
-						className="aspect-ratio-[182/240] block w-full object-cover cursor-pointer group-hover:-translate-y-2 group-hover:translate-x-2 transition-all duration-300 ease-in-out"
+						className="aspect-ratio-[182/240] block w-full object-cover cursor-pointer group-hover:-translate-y-1.5 group-hover:translate-x-1.5 transition-all duration-300 ease-in-out group-hover:shadow-card rounded-xs"
 					/>
 				</div>
 				<div className="flex flex-col gap-1">
