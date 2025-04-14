@@ -14,4 +14,12 @@ function BtnSecondary({ text }: { text: string }) {
     );
 }
 
-export { BtnPrimary, BtnSecondary };
+function Tag({ text }: { text: string }) {
+    return (
+		<button className="bg-neutral-700 text-xs text-neutral-400 font-semibold px-1.5 py-0.5 rounded-full">
+            { text}
+		</button>
+	);
+}
+
+export { BtnPrimary, BtnSecondary, Tag };

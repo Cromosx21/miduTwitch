@@ -7,7 +7,9 @@ function App() {
 			<Navbar />
 			<main className="px-6 mt-6 flex flex-row gap-6">
 				<Sidebar />
-				<div>
+				<div className="flex flex-col gap-6">
+					<ListChannels />
+					<ListChannels />
 					<ListChannels />
 				</div>
 			</main>
