@@ -16,7 +16,7 @@ function BtnSecondary({ text }: { text: string }) {
 
 function Tag({ text }: { text: string }) {
     return (
-		<button className="bg-neutral-700 text-xs text-neutral-400 font-semibold px-1.5 py-0.5 rounded-full">
+		<button className="bg-neutral-700 text-xs text-neutral-400 font-semibold px-1.5 py-0.5 rounded-full w-fit">
             { text}
 		</button>
 	);

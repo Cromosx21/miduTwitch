@@ -1,0 +1,54 @@
+{
+    "listCardCategory": [
+        {
+            "id": 1,
+            "nameCategory": "Just Chatting",
+            "nameImage": "Portada_1.png",
+            "totalViewers": 5720068,
+            "tags": ["IRL"]
+        },
+        {
+            "id": 2,
+            "nameCategory": "Debugging",
+            "nameImage": "Portada_2.png",
+            "totalViewers": 25068,
+            "tags": ["Software", "Programming"]
+        },
+        {
+            "id": 3,
+            "nameCategory": "Farm Simulator",
+            "nameImage": "Portada_3.png",
+            "totalViewers": 1264900,
+            "tags": ["Simulation", "Gaming"]
+        },
+        {
+            "id": 4,
+            "nameCategory": "S.T.A.L.K.E.R. 2: Heart of Steel",
+            "nameImage": "Portada_4.png",
+            "totalViewers": 6720068,
+            "tags": [ "Gaming"]
+        },
+        {
+            "id": 5,
+            "nameCategory": "The Legend of Zelda: Breath of the Wild",
+            "nameImage": "Portada_5.png",
+            "totalViewers": 393068,
+            "tags": ["Gaming"]
+        },
+        {
+            "id": 6,
+            "nameCategory": "Flight Simulator",
+            "nameImage": "Portada_6.png",
+            "totalViewers": 1654862,
+            "tags": ["Simulation"]
+        },
+        {
+            "id": 7,
+            "nameCategory": "Software and Game Development",
+            "nameImage": "Portada_7.png",
+            "totalViewers": 189644,
+            "tags": ["Software", "Programming"]
+        }
+    ]
+
+}
