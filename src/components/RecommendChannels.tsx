@@ -2,19 +2,22 @@ import { CollapseIcon } from "./ui/Icons";
 import { useState } from "react";
 import SuggestedAccount from "./ui/SuggestedAccount";
 
-export default function RecommendChannels() {
+export default function RecommendChannels({ openSidebar}: {openSidebar: () => void;}) {
+    
 	function CalcViwers(Viwers: number) {
 		const number = Viwers / 1000;
 		return number.toFixed(1).concat("k");
-    }
-    
-    const [isOpen, setIsOpen] = useState(false);
+	}
+
+	const [isOpen, setIsOpen] = useState(false);
 
 	return (
 		<>
 			<aside className="text-gray-100">
 				<div className="flex flex-col">
-					<div className={`flex flex-row items-center px-2.5 py-1.5 justify-between    `} >
+					<div
+						className={`flex flex-row items-center px-2.5 py-1.5 justify-between    `}
+					>
 						{isOpen && (
 							<h2 className="text-sm uppercase font-semibold">
 								Recommends Channels
@@ -24,7 +27,10 @@ export default function RecommendChannels() {
 							Styles={`size-6 rounded-xs text-gray-100 transition-all duration-300 ease-in-out h-full cursor-pointer hover:bg-neutral-700 p-0.5 rotate-${
 								isOpen ? "0" : "180"
 							}`}
-							onClick={() => setIsOpen(!isOpen)}
+							onClick={() => {
+								setIsOpen(!isOpen);
+								openSidebar();
+							}}
 						/>
 					</div>
 					<div
