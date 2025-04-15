@@ -11,7 +11,7 @@ export default function ListChannels(){
 					<span className="text-sky-500">Live Channels</span> We think
 					you'll like
 				</p>
-				<div className="grid grid-cols-3 gap-6 2xl:grid-cols-4 ">
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4">
 					<CardChannel
 						NameThumbnail="Screen_1.png"
 						TitleVideo="Aprende a programar"
