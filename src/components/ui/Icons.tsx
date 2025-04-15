@@ -64,7 +64,7 @@ function LeftIcon({ Styles }: { Styles: string }) {
 	);
 }
 
-function MoreIcon({ Styles }: { Styles: string }) {
+function MoreIcon({ Styles, onClick }: { Styles: string; onClick: () => void }) {
 	return (
 		<svg
 			width="24"
@@ -73,6 +73,7 @@ function MoreIcon({ Styles }: { Styles: string }) {
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
 			className={`${Styles}`}
+			onClick={onClick}
 		>
 			<path
 				d="M14.25 5.25C14.25 6.49264 13.2426 7.5 12 7.5C10.7574 7.5 9.75 6.49264 9.75 5.25C9.75 4.00736 10.7574 3 12 3C13.2426 3 14.25 4.00736 14.25 5.25Z"
