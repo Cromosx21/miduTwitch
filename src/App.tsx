@@ -7,7 +7,7 @@ function App() {
 	return (
 		<>
 			<Navbar />
-			<main className="px-6 mt-6 flex flex-row gap-6">
+			<main className=" flex flex-row gap-6">
 				<Sidebar />
 				<div className="flex flex-col gap-6">
 					<ListChannels />

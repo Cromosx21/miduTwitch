@@ -1,4 +1,4 @@
-function CollapseIcon({ Styles }: { Styles: string }) {
+function CollapseIcon({ Styles, onClick }: { Styles: string, onClick: () => void }) {
 	return (
 		<svg
 			width="24"
@@ -7,6 +7,7 @@ function CollapseIcon({ Styles }: { Styles: string }) {
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
 			className={`${Styles}`}
+			onClick={onClick}
 		>
 			<rect
 				x="19.333"
