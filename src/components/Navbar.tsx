@@ -2,13 +2,12 @@ import { Logo } from "./ui/ImageIcons";
 import { MoreIcon, ProfileIcon, NotificationIcon } from "./ui/Icons";
 import { BtnPrimary, BtnSecondary } from "./ui/Buttons";
 import Search from "./ui/Search";
-import { useState} from "react";
+import { useState } from "react";
 
-export default function Navbar() {
-
+export default function Navbar({ onClick }: { onClick: () => void }) {
 	const subMenu = [
 		{
-			"General": [
+			General: [
 				"Acerca de",
 				"Anunciantes",
 				"Blog",
@@ -19,10 +18,10 @@ export default function Navbar() {
 				"Prensa",
 				"Turbo",
 				"Twitch Gif Card",
-			]
+			],
 		},
 		{
-			"Ayuda": [
+			Ayuda: [
 				"Centro de ayuda",
 				"Comunidad",
 				"Contacto",
@@ -32,15 +31,14 @@ export default function Navbar() {
 				"Seguridad",
 				"Términos",
 				"Declaración de accesibilidad",
-			]
-		}
-	]
+			],
+		},
+	];
 
 	const [isOpen, setIsOpen] = useState(false);
 
-
 	return (
-		<nav className="w-full py-1.5 px-4 md:px-6 bg-neutral-900 text-gray-100 flex flex-row justify-between items-center gap-2 md:gap-6">
+		<nav className="sticky top-0 z-10 w-full py-1.5 px-4 md:px-6 bg-neutral-900 text-gray-100 flex flex-row justify-between items-center gap-2 md:gap-6">
 			<div className=" flex flex-row items-center gap-2">
 				<Logo Styles={"size-7"} />
 				<h1 className="text-sm font-bold uppercase">MiduTwitch</h1>
@@ -66,7 +64,12 @@ export default function Navbar() {
 											</h3>
 											<ul>
 												{items.map((item, i) => (
-													<li key={i} className="text-neutral-200 cursor-pointer p-1 hover:bg-neutral-700 rounded-xs">{item}</li>
+													<li
+														key={i}
+														className="text-neutral-200 cursor-pointer p-1 hover:bg-neutral-700 rounded-xs"
+													>
+														{item}
+													</li>
 												))}
 											</ul>
 										</div>
@@ -87,8 +90,13 @@ export default function Navbar() {
 					</span>
 					<NotificationIcon Styles={"size-7 text-gray-100 h-full"} />
 				</div>
-				<BtnPrimary text={"Log In"} />
-				<BtnSecondary text={"Sign Up"} />
+				<BtnPrimary
+					type={"button"}
+					text={"Log In"}
+					estado={false}
+					onClick={onClick}
+				/>
+				<BtnSecondary type={"button"} text={"Sign Up"} />
 				<span className="cursor-pointer hidden md:block">
 					<ProfileIcon Styles={"size-7 text-gray-100 h-full"} />
 				</span>
